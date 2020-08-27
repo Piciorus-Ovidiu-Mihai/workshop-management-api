@@ -1,11 +1,6 @@
-# Workshop-Management
-This is an application for managing the workshops.
-
-## What I used for the application
-Firstly, I made register and login with firebase. I have a menu with Navigation Drawer. I used Fragments for each page and Constraint Layout for arranging all buttons, plaintext,textview,recyclerview and cards view. Also , I integrate Camera for taking photos.
-These are only some things I used in my application,behind all logical operations to make this application to work properly.
-
-
+# Workshop Management
+This is an application for managing the workshops. I used Windows Presentation Foundation for the client and web services for connecting the client with database in C#.
+I made an algorithm for checking the safety of the password. With this application you can add, delete and modify an workshop if you are Admin and if you are a client you can use this application for seeing what workshops will take place.
 ## Some photos
 ![alt text](https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work1.PNG)<br/><br/><br/>
 ![alt text](https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work2.PNG)<br/><br/><br/>
@@ -18,7 +13,7 @@ These are only some things I used in my application,behind all logical operation
 ![alt text](https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work9.PNG)<br/><br/><br/>
 
 ## Getting Started
-You can clone this repository on your local computer and connect to a phone with Android X by USB and after run this application will be installed on your phone.You can use a virtual emulator to see the application .
+You can clone this repository on your local computer. After that, you have to run the web services and after that the WPF-client.
 
 ## Programming Language
-* [Java-Android](https://developer.android.com/guide)
+* C#
