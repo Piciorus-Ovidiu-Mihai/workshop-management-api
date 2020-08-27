@@ -1,5 +1,5 @@
 # Workshop-Management
-This is an application for manage the workshops.
+This is an application for managing the workshops.
 
 ## What I used for the application
 Firstly, I made register and login with firebase. I have a menu with Navigation Drawer. I used Fragments for each page and Constraint Layout for arranging all buttons, plaintext,textview,recyclerview and cards view. Also , I integrate Camera for taking photos.
