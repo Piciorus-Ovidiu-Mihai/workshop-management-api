@@ -1,0 +1,81 @@
+﻿<Window x:Class="WorkshopsManagement.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkshopsManagement"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Login" Height="500" Width="350" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        FontFamily="Segoe UI Emoji">
+    <Grid>
+        <Rectangle Height="280" VerticalAlignment="Top">
+
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+
+        </Rectangle>
+        <Rectangle Width="280" Height="426" VerticalAlignment="Top" Margin="35,32,35,0" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid VerticalAlignment="Top" Margin="35,50,35,0" Height="377">
+            <Label x:Name="label_Register" Content="Register" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" FontSize="18" Margin="0,-8,0,0"/>
+            <StackPanel Margin="15">
+                <TextBox x:Name="textBox_First" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="First Name" FontFamily="Champagne &amp; Limousines"/>
+                <TextBox x:Name="textBox_Last" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Last Name" FontFamily="Champagne &amp; Limousines"/>
+                <TextBox x:Name="textBox_User" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username" FontFamily="Champagne &amp; Limousines"/>
+                <TextBox x:Name="textBox_Email" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Email" FontFamily="Champagne &amp; Limousines"/>
+                <PasswordBox x:Name="textBox_Pass" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password" FontFamily="Champagne &amp; Limousines" PasswordChanged="wrongChanged"/>
+                <PasswordBox x:Name="textBox_ConfirmPass" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Confirm Password" FontFamily="Champagne &amp; Limousines" Foreground="Black" PasswordChanged="textBox_Password_TextChanged"/>
+            </StackPanel>
+        </Grid>
+
+        <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,442,0,0" Content="Register" Click="addToAccounts"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" RenderTransformOrigin="-0.604,0.161" Height="27" Width="56" Margin="0,0,294,0" Click="BackToLogin">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="ArrowBack" Height="17" VerticalAlignment="Center" Width="21" RenderTransformOrigin="1.485,0.452"></materialDesign:PackIcon>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="294,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.604,0.161" Height="27" Width="56" Click="CloseApp">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Power" Height="17" Width="21" RenderTransformOrigin="1.485,0.452"/>
+        </Button>
+
+
+    </Grid>
+</Window>

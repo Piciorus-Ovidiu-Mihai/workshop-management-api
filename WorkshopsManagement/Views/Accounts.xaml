@@ -1,0 +1,42 @@
+﻿<Page x:Class="WorkshopsManagement.Accounts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WorkshopsManagement"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Accounts">
+
+    <Grid>
+        <Rectangle RadiusX="80" RadiusY="80" HorizontalAlignment="Left" Height="900" VerticalAlignment="Center" Width="800" Margin="50,20,20,20">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0.97"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Image Source="/Views/accounts.png" HorizontalAlignment="Left" VerticalAlignment="Center" Height="896" Margin="910,0,0,0" Width="950"/>
+        <Grid HorizontalAlignment="Left" Height="900" VerticalAlignment="Center" Width="800" Margin="50,20,20,20">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="748" Height="782">
+                <TextBox x:Name="textBox_First" IsEnabled="False" Margin="0,50" Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" materialDesign:ThemeAssist.Theme="Dark" materialDesign:HintAssist.Hint="First Name" materialDesign:HintAssist.Foreground="White" FontFamily="Champagne &amp; Limousines" Foreground="White"/>
+                <TextBox x:Name="textBox_Last" IsEnabled="False" Margin="0,50" Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"  materialDesign:ThemeAssist.Theme="Dark" materialDesign:HintAssist.Hint="Last Name" materialDesign:HintAssist.Foreground="White" FontFamily="Champagne &amp; Limousines" Foreground="White"/>
+                <TextBox x:Name="textBox_User" IsEnabled="False" Margin="0,50" Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" materialDesign:ThemeAssist.Theme="Dark" materialDesign:HintAssist.Hint="Username" materialDesign:HintAssist.Foreground="White" FontFamily="Champagne &amp; Limousines" Foreground="White"/>
+                <TextBox x:Name="textBox_Email" IsEnabled="False" Margin="0,50" Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" materialDesign:ThemeAssist.Theme="Dark" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.Foreground="White" FontFamily="Champagne &amp; Limousines" Foreground="White"/>
+                <PasswordBox x:Name="textBox_Pass" IsEnabled="False" Margin="0,50" Style="{StaticResource MaterialDesignFilledPasswordFieldPasswordBox}"  materialDesign:ThemeAssist.Theme="Dark" materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.Foreground="White" FontFamily="Champagne &amp; Limousines" Foreground="White"/>
+            </StackPanel>
+            <Button x:Name="button_Edit" Content="Edit" HorizontalAlignment="Left" Margin="80,842,0,0" VerticalAlignment="Top" Click="editData"/>
+            <Button x:Name="button_Save" IsEnabled="False"  Content="Save" IsDefault="True" HorizontalAlignment="Left" Margin="178,842,0,0" VerticalAlignment="Top" Click="saveData">
+                <Button.Foreground>
+                    <SolidColorBrush Color="#DDFFFFFF" Opacity="1"/>
+                </Button.Foreground>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF673AB7" Opacity="1"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="#FF673AB7" Opacity="1"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

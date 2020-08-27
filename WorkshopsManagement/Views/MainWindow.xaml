@@ -1,0 +1,47 @@
+﻿<Window x:Class="WorkshopsManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkshopsManagement"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="1080" Width="1920" WindowStyle="None" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="/Views/wallpaper2.jpg"/>
+    </Window.Background>
+    <Grid>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="90">
+            <StackPanel.Background>
+                <SolidColorBrush Color="#FF5F74AE" Opacity="0.65"/>
+            </StackPanel.Background>
+            <Button Content="Home" Click="HomeButton" Height="60" Width="120" Margin="20,10,0,10"/>
+            <Button Content="Workshops" Click="WorkshopButton" Height="60" Width="120" Margin="10,10,0,10"/>
+            <Button Content="Forum" Click="ForumButton" Height="60" Width="120" Margin="10,10,0,10"/>
+            <Button Content="Contact" Click="ContactButton" Height="60" Width="120" Margin="10,10,0,10"/>
+            <Button Content="Log Out" Click="GoToLogInFromWindow" Height="60" Width="120" Margin="10,10,0,10"/>
+            <Button x:Name="adminButton" Content="Admin" Height="60" Width="120" Margin="10,10,0,10" Click="GoToAdmin"/>
+        </StackPanel>
+        <Frame x:Name="MainWin" Margin="0,90,0,0" NavigationUIVisibility="Hidden"/>
+        <Button HorizontalAlignment="Left" Margin="1788,10,0,0" VerticalAlignment="Top" Height="62" Width="97" Click="ExitButton">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+            <materialDesign:PackIcon Kind="Power" Height="40" Width="40"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="1708,10,0,0" VerticalAlignment="Top" Height="62" Width="80" Click="AccountsButton">
+            <Button.Background>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0.04"/>
+            </Button.BorderBrush>
+            <materialDesign:PackIcon Kind="Account" Height="40" Width="40"/>
+        </Button>
+        <Label x:Name="label_UserName" Content="UserName" HorizontalAlignment="Left" Margin="1352,22,0,0" VerticalAlignment="Top" Height="38" Width="356" FontSize="21" HorizontalContentAlignment="Right" Foreground="#DDFFFFFF"/>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Page x:Class="WorkshopsManagement.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WorkshopsManagement"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Home">
+
+    <Grid>
+        <Rectangle RadiusX="80" RadiusY="80" HorizontalAlignment="Center" Height="900" VerticalAlignment="Center" Width="1600">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0.9"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Source="/Images/img4.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="600" Height="150" Margin="0,42,0,0"/>
+        <Image HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="350" Height="250" Margin="202,0,0,115" Source="/Views/home1.png"/>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="350" Height="250" Margin="0,0,202,115" Source="/Views/home2.png"/>
+
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" Height="600" TextAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="20" Foreground="White">
+                <LineBreak />
+                <LineBreak />
+                Welcome to our Workshop Management App! <LineBreak />
+                <LineBreak />
+                <LineBreak />
+                <LineBreak />
+                <LineBreak />
+                <LineBreak />
+                <LineBreak />
+              Whether you are eager to discover the hottest workshops or you want   <LineBreak />
+                <LineBreak />
+              to organize a workshop yourself, but you do not have the necessary methods, <LineBreak />
+                <LineBreak />
+              we have the perfect solution for you. We are a group of 3 people, <LineBreak />
+                <LineBreak />
+              and our only wish is to fulfill your wishes. <LineBreak />
+            <LineBreak/>
+                We invite you to explore further to find out what it is about.<LineBreak/>
+        </TextBlock>
+        
+       
+    </Grid>
+</Page>

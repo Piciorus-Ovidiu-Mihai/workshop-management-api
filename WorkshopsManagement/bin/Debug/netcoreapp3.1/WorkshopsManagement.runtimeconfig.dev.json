@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Ovidiu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Ovidiu\\.nuget\\packages"
+    ]
+  }
+}

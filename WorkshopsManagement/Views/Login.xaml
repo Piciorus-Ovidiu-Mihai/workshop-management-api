@@ -1,0 +1,51 @@
+﻿<Window x:Class="WorkshopsManagement.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkshopsManagement"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Login" Height="500" Width="350"
+        ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+        ResizeMode="NoResize"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" 
+        HorizontalContentAlignment="Center">
+    <Grid>
+        <Rectangle Height="280" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240">
+            <TextBlock x:Name="textBlock_WelcomeMessage" Text="Login" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
+            <StackPanel VerticalAlignment="Center" Margin="15,0,15,0" Height="140">
+                <TextBox x:Name="textBox_User" Margin="0,10" materialDesign:HintAssist.Hint="User" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextChanged="textBox_TextChanged" />
+                <PasswordBox x:Name="textBox_Pass" Margin="0,10" materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" PasswordChanged="textBox_Pass_PasswordChanged"/>
+            </StackPanel>
+        </Grid>
+
+        <Button x:Name="button_Login" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="LOGIN" Click="GoToMainWindow" IsDefault="True"/>
+        <TextBlock Text="Not having an account?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand" MouseLeftButtonDown="GoToRegister"/>
+        <Button Margin="305,0,-10,0" VerticalAlignment="Top" RenderTransformOrigin="0.297,0.485" Height="21" Click="Close_Button" >
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="#FF673AB7" Opacity="0"/>
+            </Button.Background>
+            <materialDesign:PackIcon Kind="Power"/>
+        </Button>
+        <Label x:Name="pass_Error_Label" Content="" HorizontalAlignment="Left" Margin="48,335,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="user_Error_Label" Content="" HorizontalAlignment="Left" Margin="48,280,0,0" VerticalAlignment="Top" Foreground="Red"/>
+    </Grid>
+</Window>
