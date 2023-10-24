@@ -4,27 +4,36 @@ I made an algorithm for checking the safety of the password. With this applicati
 
 ## 🛠️ Architecture
 
+* Use Case Diagram
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work1.PNG">
 </p>
 
+* Database Architecture
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work2.PNG">
 </p>
 
 ## 📷 Preview  
+* Login Page
 
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work3.PNG">
 </p>
 
+* Dashboard Page
+
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work4.PNG">
 </p>
 
+* Workshops List Page
+
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work5.PNG">
 </p>
+
+* Comments Section
 
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work6.PNG">
@@ -34,21 +43,22 @@ I made an algorithm for checking the safety of the password. With this applicati
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work7.PNG">
 </p>
 
+* User Info Page
+
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work8.PNG">
 </p>
 
+* Manage Workshop Page
 <p align="center">
   <img src="https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/work9.PNG">
 </p>
 
 ## 🛡️ Key Features
-* Efficiency: Save time and valuable resources by eliminating the need to build everything from scratch, allowing developers to focus on the unique aspects of their application.
-* Customization: Easily customize projects based on specific requirements, such as selecting desired navigation menus, integrating reusable components, and implementing authentication modules.
-* Flexibility: Adapt to the ever-evolving industry requirements with the flexibility and ease of use offered by this solution.
-* High-Quality Code: The project promotes robust coding standards and design patterns, fostering scalability and maintainability while adhering to industry best practices.
-* Collaboration: Standardized coding styles, naming conventions, and architectural models enhance code readability and facilitate collaboration within development teams.
-* Future-Ready: Create web applications that are not only visually appealing but also robust and adaptable to future needs.
+* Enhances Security: Ensures that passwords meet robust security requirements, reducing the risk of unauthorized access. Allows flexibility in defining password policies to align with specific security needs.
+* Abstraction: Promotes a high level of abstraction, making code more understandable and adaptable to changes.
+* Encapsulation: Protects data integrity by encapsulating data and methods within classes.
+* Logic and Constraint Solving: Demonstrates a real-world application of constraint solving through code, a fundamental problem-solving skill.
 
 ## 💽 Prerequisites
 * ⚙️ Install Visual Studio 
